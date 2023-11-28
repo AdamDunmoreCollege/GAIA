@@ -1,0 +1,62 @@
+:root{
+    --p-colour: #4E6647;
+    --p-colour-hover: #374832; 
+    --s-colour: #A3AF9E;
+    --s-colour-hover: #8A9A84;
+    --t-colour: #D7E1CB;
+    --t-colour-hover: #C3D2B1;
+
+    --text-colour: #ffffff;
+    --text-colour-alt: #000000;
+
+    --background-colour: #E6EDE7;
+    --background-colour-dark: #c3dcc6;
+
+    --border-color: #111812;
+}
+
+html, button, input, textarea, h5{
+    font-family: 'Montserrat', sans-serif;
+}
+
+html , body, #main{
+    width: 100%;
+    height: 100%;
+
+    padding: 0px;
+    margin: 0px;
+
+    overflow-x: hidden;
+}
+
+#content{
+    width: 100%;
+    height: calc(100% - 80px);
+}
+
+footer{
+    width: 100%;
+}
+
+#footerContent{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+
+    padding-bottom: 10px;
+
+    background-color: var(--p-colour);
+}
+
+#footerText{
+    color: var(--text-colour);
+}
+
+#footerlogo{
+    height: 30px;
+    width: 30px;
+}

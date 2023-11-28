@@ -1,0 +1,16 @@
+import Footer from "../footer.js"
+
+function Generic(ID){
+    return(
+        `
+<div class="generic" id=${ID}>
+        <div class="parallax" id="${ID}Img1"><h3 class="gen_info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra neque eu erat posuere dapibus. Donec ultrices nibh ut viverra rhoncus. Vivamus aliquet elit sed quam rutrum, ac fermentum enim gravida. Ut lectus urna, suscipit maximus venenatis sit amet, convallis sit amet dolor. Aenean quis elit cursus, viverra justo nec, scelerisque sapien. Mauris massa elit, hendrerit ac condimentum nec, imperdiet quis massa. Quisque vehicula dui sit amet iaculis blandit. Aliquam nec orci dignissim, gravida eros id, consectetur odio. Maecenas lobortis est lectus, vitae ullamcorper diam suscipit ut. Donec odio nunc, dignissim et turpis sed, suscipit lobortis quam. Vestibulum erat enim, congue a nibh hendrerit, tincidunt volutpat massa. Donec dignissim, ex luctus aliquet pellentesque, ex urna mattis quam, sit amet tincidunt urna lacus et velit. Quisque at suscipit nibh, a molestie velit.</h3></div>
+        <div class="parallax" id="${ID}Img2"><h3 class="gen_info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra neque eu erat posuere dapibus. Donec ultrices nibh ut viverra rhoncus. Vivamus aliquet elit sed quam rutrum, ac fermentum enim gravida. Ut lectus urna, suscipit maximus venenatis sit amet, convallis sit amet dolor. Aenean quis elit cursus, viverra justo nec, scelerisque sapien. Mauris massa elit, hendrerit ac condimentum nec, imperdiet quis massa. Quisque vehicula dui sit amet iaculis blandit. Aliquam nec orci dignissim, gravida eros id, consectetur odio. Maecenas lobortis est lectus, vitae ullamcorper diam suscipit ut. Donec odio nunc, dignissim et turpis sed, suscipit lobortis quam. Vestibulum erat enim, congue a nibh hendrerit, tincidunt volutpat massa. Donec dignissim, ex luctus aliquet pellentesque, ex urna mattis quam, sit amet tincidunt urna lacus et velit. Quisque at suscipit nibh, a molestie velit.</h3></div>
+        <div class="parallax" id="${ID}Img3"><h3 class="gen_info_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pharetra neque eu erat posuere dapibus. Donec ultrices nibh ut viverra rhoncus. Vivamus aliquet elit sed quam rutrum, ac fermentum enim gravida. Ut lectus urna, suscipit maximus venenatis sit amet, convallis sit amet dolor. Aenean quis elit cursus, viverra justo nec, scelerisque sapien. Mauris massa elit, hendrerit ac condimentum nec, imperdiet quis massa. Quisque vehicula dui sit amet iaculis blandit. Aliquam nec orci dignissim, gravida eros id, consectetur odio. Maecenas lobortis est lectus, vitae ullamcorper diam suscipit ut. Donec odio nunc, dignissim et turpis sed, suscipit lobortis quam. Vestibulum erat enim, congue a nibh hendrerit, tincidunt volutpat massa. Donec dignissim, ex luctus aliquet pellentesque, ex urna mattis quam, sit amet tincidunt urna lacus et velit. Quisque at suscipit nibh, a molestie velit.</h3></div>
+        ${Footer()}
+</div>
+        `
+    )
+}
+
+export default Generic;

@@ -1,0 +1,48 @@
+.generic{
+    background-color: var(--background-colour);
+
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+
+    overflow-y: scroll;
+}
+
+#ForestsImg1{background-image: url("../assets/img/about/forest/forest1.jpg");}
+#ForestsImg2{background-image: url("../assets/img/about/forest/forest2.jpg");}
+#ForestsImg3{background-image: url("../assets/img/about/forest/forest3.jpg");}
+
+#SeasImg1{background-image: url("../assets/img/about/ocean/ocean1.jpg");}
+#SeasImg2{background-image: url("../assets/img/about/ocean/ocean2.jpg");}
+#SeasImg3{background-image: url("../assets/img/about/ocean/ocean3.jpg");}
+
+#DesertsImg1{background-image: url("../assets/img/about/desert/desert1.jpg");}
+#DesertsImg2{background-image: url("../assets/img/about/desert/desert2.jpg");}
+#DesertsImg3{background-image: url("../assets/img/about/desert/desert3.jpg");}
+
+#MountainsImg1{background-image: url("../assets/img/about/mountains/mountain1.jpg");}
+#MountainsImg2{background-image: url("../assets/img/about/mountains/mountain2.jpg");}
+#MountainsImg3{background-image: url("../assets/img/about/mountains/mountain3.jpg");}
+
+.gen_info_text{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40%;
+    margin-bottom: 50%;
+
+    text-align: center;
+
+    background-color: #00000060;
+
+    color: var(--text-colour);
+}
+
+@media only screen and (max-width: 600px)  {
+    .gen_info_text{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
