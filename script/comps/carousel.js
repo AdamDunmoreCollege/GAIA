@@ -47,6 +47,11 @@ function Carousel(){
         </div>
 
         <style>
+            @keyframes fadeIn {
+                0% { opacity: 0; }
+                100% { opacity: 1; }
+            }
+
             #carousel{
                 width: 40%;
                 height: auto;
@@ -74,6 +79,8 @@ function Carousel(){
                 aspect-ratio: 16/9;
 
                 background-color: var(--t-colour);
+
+                animation: fadeIn 1s;
             }
 
             .changeSlide{
