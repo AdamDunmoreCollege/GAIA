@@ -3,6 +3,33 @@ import About from "./comps/pages/about.js"
 import Contact from "./comps/pages/contact.js"
 import Generic from "./comps/pages/generic.js"
 
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyCMgvMISFn9DeBwkJzsFZZ2MTvEup83jU8",
+  authDomain: "gaia-769d8.firebaseapp.com",
+  projectId: "gaia-769d8",
+  storageBucket: "gaia-769d8.appspot.com",
+  messagingSenderId: "196816720301",
+  appId: "1:196816720301:web:7186d3cd7e2ee9e1bd5124",
+  measurementId: "G-S5BWBRQ1NX"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+async function send_email(){
+    let email = document.getElementById("email").value
+    let message = document.getElementById("message").value
+
+    const docRef = await addDoc(collection(db, "contact"), {
+        email: email,
+        message: message
+    })
+}
+
 const content = document.getElementById("content")
 
 const buttons = document.getElementsByClassName("navButton")
@@ -27,11 +54,6 @@ const addListeners = () => {
             changeTab(causeButtons[x].id)
         })
     }
-}
-
-const send_email = () => {
-    let email = document.getElementById("email")
-    let message = document.getElementById("message")
 }
 
 const changeTab = (ID) => {
