@@ -1,0 +1,89 @@
+.navButton{
+    margin-left: 5px;
+
+    font-size: 30px;
+
+    height: 80%;
+    
+    border-radius: 10px;
+    text-align: center;
+
+    border: none;
+
+    color: var(--text-colour);
+    background-color: var(--s-colour);
+
+    transition: background-color 0.4s;
+}
+
+.navButton:hover{
+    background-color: var(--s-colour-hover);
+}
+
+@media only screen and (min-width: 601px)  {
+    #DDButton{
+        display: none;
+    }
+
+    #DD{
+        display: none;
+    }
+
+    .navButton_Button{
+        font-size: 30px;
+    }
+
+    #our_causes{
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 600px)  {
+    #DDButton{
+        background-image: url("../assets/img/menu.svg");
+        background-color: #00000000;
+        border: none;
+
+        margin-left: auto;
+        margin-right: 20px;
+
+        height: 50px;
+        width: 50px;
+    }
+
+    #DD{
+        display: flex;
+        flex-direction: column;
+
+        overflow: hidden;
+
+        width: 0px;
+        height: 350px;
+
+        position: absolute;
+        top: 120px;
+        right: 0px;
+
+        background-color: var(--s-colour);
+        
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+
+        transition: height 1s, width 1s;
+    }
+
+    .pc{
+        display: none;
+    }
+
+    .mobile{
+        height: 40px;
+        margin: 4px;
+    }
+}
+
+@media only screen and (max-width: 750px) and (min-width: 601px){
+    .navButton{
+        font-size: 3vw;
+    }
+}
