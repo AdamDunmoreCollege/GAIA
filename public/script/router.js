@@ -24,10 +24,17 @@ async function send_email(){
     let email = document.getElementById("email").value
     let message = document.getElementById("message").value
 
-    const docRef = await addDoc(collection(db, "contact"), {
-        email: email,
-        message: message
-    })
+    try {
+        const docRef = await addDoc(collection(db, "contact"), {
+            email: email,
+            message: message
+        })
+
+        alert("Your email has been submitted and will be reviewed by our support team")
+    } catch (e){
+        alert("Your email failed to send. Try again later")
+    }
+    
 }
 
 const content = document.getElementById("content")
